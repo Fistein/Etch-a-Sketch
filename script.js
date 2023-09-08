@@ -4,6 +4,6 @@ screen.style.gridTemplateRows = 'repeat(16,1fr)';
 
 for(let i = 0; i < 256; i++){
     let squares = document.createElement('div');
-    squares.style.backgroundColor = "green";
+    squares.style.backgroundColor = "#c5d401";
     screen.insertAdjacentElement('beforeEnd',squares);
 }

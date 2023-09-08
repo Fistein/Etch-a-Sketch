@@ -1,3 +1,8 @@
+.grid-container{
+    width: 40vw;
+    height: 100vh;
+    margin: 3rem auto;
+}
 .grid-displays{
     width: 30rem;
     height: 30rem;
