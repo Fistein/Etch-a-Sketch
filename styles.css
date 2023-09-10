@@ -1,10 +1,87 @@
 .grid-container{
     width: 40vw;
     height: 100vh;
-    margin: 3rem auto;
+    margin: 1rem auto;
 }
-.grid-displays{
-    width: 30rem;
-    height: 30rem;
-   display: grid;
+
+.grid-adjust-button button{
+    display: block;
+    text-align: center;
+    padding: 10px 20px;
+    background: #1245a4;
+    color: #fff;
+    border: 2px solid #fff;
+    outline: none;
+    cursor: pointer;
+    border-radius: 7px;
+}
+#grid-form{
+    width: 300px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background: rgb(205, 235, 235);
+    padding: 15px;
+    color: #1245a5;
+    border-radius: 5px;
+    box-shadow: 3px 2px 3px #000;
+    font-weight: 900;
+    height: 100px;
+    z-index: 15;
+}
+#grid-form{
+    display: none;
+}
+#grid-form input{
+    padding: 5px 2px;
+    text-align: center;
+    color: #e62231;
+    font-weight: bold;
+    font-size: 20px;
+    width: 60px;
+    display: block;
+    margin: 12px 0;
+}
+.close-btn{
+    position: absolute;
+    top:5px;
+    right: 5px;
+    background-color: #e62231;
+    color: azure;
+    font-weight: bold;
+    padding: 4px 7px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+#overlay{
+    position: fixed;
+    top:0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.7);
+    z-index: 9;
+    display: none;
+}
+
+.send{
+    padding: 5px 8px;
+    background-color: #1245a5;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.send:hover{
+    background-color: #fff;
+    color: #1245a4;
+    font-weight: bold;
+    border: 2px solid blue;
+}
+.adjust{
+    font-size: 25px;
+    margin: 0 auto;
 }
