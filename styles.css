@@ -96,3 +96,20 @@ body{background: #e7b913;}
     font-size: 25px;
     margin: 0 auto;
 }
+.Clear{
+    display: block;
+    background-color: #1203f7;
+    color: #fff;
+    cursor: pointer;
+    border: 2px solid #fff;
+    padding: 7px 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+.Clear:hover{
+    background: #fff;
+    color: #1203f7;
+    border: 2px solid #1203f7;
+    border-radius: 5px;
+    font-weight: bold;
+}

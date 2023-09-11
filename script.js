@@ -6,6 +6,9 @@ gridz.forEach((div) => div.remove());
 screen.style.gridTemplateColumns = `repeat(${data},1fr)`;
 screen.style.gridTemplateRows = `repeat(${data},1fr)`;;
 let area = data * data;
+
+let clear_button = document.querySelector('.Clear');
+
 for(let i = 0; i < area; i++){
     let square = document.createElement('div');
     square.addEventListener('mouseover', () => 
@@ -13,7 +16,12 @@ for(let i = 0; i < area; i++){
        
      square.style.backgroundColor = `RGB(${Math.random()*255},${Math.random()*255},${Math.random()*255})`;  
     });
-    square.style.backgroundColor = "#ffffff";
+   
+    clear_button.addEventListener('click', () => {
+    square.style.backgroundColor = 'white';
+            
+        });
+        
     screen.insertAdjacentElement('beforeEnd',square);
 }
 
@@ -56,3 +64,4 @@ close_pop.addEventListener('click', () => {
     modal.style.display = 'none';
     overlay.style.display = 'none';
 });
+
